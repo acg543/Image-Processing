@@ -1,0 +1,44 @@
+\hypertarget{index_overview}{}\section{Project Overview}\label{index_overview}
+The goal of this project was to locate a robot using image processing, manuver a drone to the robot\textquotesingle{}s position, and safely deliver the robot to the hospital. In order to accomplish this goal, we created a web app that ran a search and rescue simulation. Our group solution to this problem was to split the program up into two seperate facades, the Image Processing Facade and the \hyperlink{classSimulation}{Simulation} Facade. The two different facades are described below and a link to a google doc with design images and explainations is provided\+: (\href{https://docs.google.com/document/d/1PGUH_LuUtF2hQxzLnQbeMqXHQhbGQ9Fh9dzaN2NJ5KU/edit}{\tt https\+://docs.\+google.\+com/document/d/1\+P\+G\+U\+H\+\_\+\+Lu\+Ut\+F2h\+Qxz\+Ln\+Qbe\+Mq\+X\+H\+Qhb\+G\+Q9\+Fh9dza\+N2\+N\+J5\+K\+U/edit})\hypertarget{index_simulation}{}\subsection{Simulation Facade}\label{index_simulation}
+The simulation Facade\textquotesingle{}s main purpose was to serve as a base class that updated the simulation based on changes made in subclasses. The \hyperlink{classSimulation}{Simulation} class was home to the drone object that was used throughout the simulation, as well as an Update function that updated the simulation to it\textquotesingle{}s current state and a Finish\+Update fucntion that updates the webapp display after all calls to Update are finished. The \hyperlink{classSimulation}{Simulation} class also housed a virtual Create\+Entity function that was implemented in the \hyperlink{classEntityFactory}{Entity\+Factory} class.\hypertarget{index_simulation}{}\subsection{Simulation Facade}\label{index_simulation}
+The search and rescue simulation is implemented using a facade pattern. The simulation facade (\hyperlink{simulation_8h_source}{simulation.\+h}) holds a few overarching functions that deal with the program as a whole, Update and Finish update for example. It also has a drone object which it inherits from the \hyperlink{classEntityFactory}{Entity\+Factory} class (\hyperlink{entity__factory_8h_source}{entity\+\_\+factory.\+h}) where it is initialized. The simulation class inherits from \hyperlink{classEntityFactory}{Entity\+Factory} and \hyperlink{classDrone}{Drone} (\hyperlink{drone_8h_source}{drone.\+h}). As stated before, \hyperlink{classEntityFactory}{Entity\+Factory} is a class that has the Create\+Entity function which initializes picojson objects. This class includes all entity classes it will create, \hyperlink{drone_8h_source}{drone.\+h} is the only file it includes in this implementation, however it can be extended to create other entities. To extend, the developer would need to create a new file to represent whichever entity they want to implement. Then they would need to implement the Create\+Entity function to fit the needs of the new entity. The U\+ML representation of \hyperlink{classEntityFactory}{Entity\+Factory} can be seen as Figure 2 on the google doc provided above. The \hyperlink{classDrone}{Drone} class holds all functions dealing with updating the drone object except for handling drone movement. \hyperlink{classMovement}{Movement} is handled by a seperate \hyperlink{classMovement}{Movement} class (\hyperlink{movement_8h_source}{movement.\+h}) and is implemented using the factory design pattern. The movement class only houses a single purely virtual function Move which is furthur implemeted in child classed. Figure 1 on the google doc shows this pattern in U\+ML. The \hyperlink{classBeeline}{Beeline} class (\hyperlink{beeline_8h_source}{beeline.\+h}) is one such class that implements the Move function. It\textquotesingle{}s implementation moves the passed drone object in a straight line, from point A to point B. The drone movement system could be furthur extended to include other forms of drone movement. All that would need to be done would be create another class that inherits from the \hyperlink{classMovement}{Movement} class and includes \hyperlink{drone_8h_source}{drone.\+h}. The Move function would need to be implemented to the developers discretion and any other helper functions could be added.\hypertarget{index_image}{}\subsection{Image Processing Facade}\label{index_image}
+!!!!!!!!!!!\+Add Description Here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\hypertarget{index_start}{}\section{Getting Started}\label{index_start}
+To run the \hyperlink{classSimulation}{Simulation}\+:
+\begin{DoxyItemize}
+\item Navigate to the project folder
+\item Type \char`\"{}make -\/j\char`\"{}
+\item Type \char`\"{}./build/web-\/app 8081 web\char`\"{}
+\end{DoxyItemize}
+
+To run the Tests\+:
+\begin{DoxyItemize}
+\item Navigate to the project folder
+\item Type \char`\"{}make -\/j\char`\"{}
+\item Type \char`\"{}./build/test-\/app\char`\"{}
+\end{DoxyItemize}\hypertarget{index_contributions}{}\section{How to Contribute}\label{index_contributions}
+In order to add additional features onto the project\+: ~\newline
+
+\begin{DoxyItemize}
+\item 1) Create a new feature branch following the naming convention \char`\"{}feature/(extension\textquotesingle{}s name)\char`\"{} ~\newline
+
+\item 2) Pull all available code from the project main branch ~\newline
+
+\item 3) Merge the main branch code into the new feature branch ~\newline
+
+\item 4) Write code for the new addition, following google C++ coding standards and including any necessary files ~\newline
+
+\item 5) Push the code to the feature branch ~\newline
+
+\item 6) Create a new pull request from the feature branch to the develop branch ~\newline
+
+\begin{DoxyItemize}
+\item this requires 1 reviewer to look over the code and accept the request ~\newline
+
+\end{DoxyItemize}
+\item 7) Create another pull request from the develop branch into the main branch ~\newline
+
+\begin{DoxyItemize}
+\item this requires 2 reviews to look over the code and accept the request ~\newline
+
+\end{DoxyItemize}
+\end{DoxyItemize}

@@ -1,0 +1,149 @@
+\hypertarget{classDrone}{}\section{Drone Class Reference}
+\label{classDrone}\index{Drone@{Drone}}
+
+
+The class for representing the drone object in the simulation.  
+
+
+
+
+{\ttfamily \#include $<$drone.\+h$>$}
+
+
+
+Inheritance diagram for Drone\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classDrone__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Drone\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classDrone__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDrone_ab692baa4be5c43b72990ce1b01bdc805}\label{classDrone_ab692baa4be5c43b72990ce1b01bdc805}} 
+\hyperlink{classDrone_ab692baa4be5c43b72990ce1b01bdc805}{Drone} ()
+\begin{DoxyCompactList}\small\item\em Default drone constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_a7875422c0bf36072ab6d747b6d543b67}\label{classDrone_a7875422c0bf36072ab6d747b6d543b67}} 
+\hyperlink{classDrone_a7875422c0bf36072ab6d747b6d543b67}{Drone} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Construct a drone at a given position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_ad8b728197d7de13358f17e192a9c7e1d}\label{classDrone_ad8b728197d7de13358f17e192a9c7e1d}} 
+void \hyperlink{classDrone_ad8b728197d7de13358f17e192a9c7e1d}{Update\+Drone} (double dt)
+\begin{DoxyCompactList}\small\item\em Updates the drone position and other dynamic properties. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_a49ba636e2a579845fbc85eda05ea3735}\label{classDrone_a49ba636e2a579845fbc85eda05ea3735}} 
+void \hyperlink{classDrone_a49ba636e2a579845fbc85eda05ea3735}{Set\+Joystick} (double x, double y, double z, double a)
+\begin{DoxyCompactList}\small\item\em Sets the direction of the drone. \end{DoxyCompactList}\item 
+bool \hyperlink{classDrone_a9b164e1535a80ce8e4de11ab0c0edcdc}{Is\+Key\+Down} (const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Check if keys are pressed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_a95aca396f093db8ec2a8e533e6a8bd60}\label{classDrone_a95aca396f093db8ec2a8e533e6a8bd60}} 
+void \hyperlink{classDrone_a95aca396f093db8ec2a8e533e6a8bd60}{Key\+Up} (const std\+::string \&key, int key\+Code)
+\begin{DoxyCompactList}\small\item\em Sets the key\+Value indexed at key to 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_a83a6384bcefa360055df86dca5ec3afc}\label{classDrone_a83a6384bcefa360055df86dca5ec3afc}} 
+void \hyperlink{classDrone_a83a6384bcefa360055df86dca5ec3afc}{Key\+Down} (const std\+::string \&key, int key\+Code)
+\begin{DoxyCompactList}\small\item\em Sets the key\+Value indexed at key to 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_ad2ad45f67c4c74a2364d09b5cccb991d}\label{classDrone_ad2ad45f67c4c74a2364d09b5cccb991d}} 
+void \hyperlink{classDrone_ad2ad45f67c4c74a2364d09b5cccb991d}{Set\+ID} (int i)
+\begin{DoxyCompactList}\small\item\em Sets the drone\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_a84fd5637a4a226c39c3ad3cd256c77e2}\label{classDrone_a84fd5637a4a226c39c3ad3cd256c77e2}} 
+void \hyperlink{classDrone_a84fd5637a4a226c39c3ad3cd256c77e2}{Set\+Speed} (double s)
+\begin{DoxyCompactList}\small\item\em Sets the drone\textquotesingle{}s speed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_aceb8b8df70fd3e70a6fc1cc8fefe9512}\label{classDrone_aceb8b8df70fd3e70a6fc1cc8fefe9512}} 
+void \hyperlink{classDrone_aceb8b8df70fd3e70a6fc1cc8fefe9512}{Set\+Position} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Sets the drone\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_a45a3478122b291066f9cbd80533a686b}\label{classDrone_a45a3478122b291066f9cbd80533a686b}} 
+void \hyperlink{classDrone_a45a3478122b291066f9cbd80533a686b}{Set\+Direction} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Sets the drone\textquotesingle{}s direction. \end{DoxyCompactList}\item 
+double \hyperlink{classDrone_ad8e2a72eb608ef4f8a82402a74fd5ad5}{Get\+Position} (int index)
+\begin{DoxyCompactList}\small\item\em Gets the drone\textquotesingle{}s position at a given index. \end{DoxyCompactList}\item 
+double \hyperlink{classDrone_a3c240b2f2cb2a355f27e31dd3b5ac931}{Get\+Direction} (int index)
+\begin{DoxyCompactList}\small\item\em Gets the drone\textquotesingle{}s direction at a given index. \end{DoxyCompactList}\item 
+int \hyperlink{classDrone_a5e69f5ebe80ece53ccb2238a2b598d97}{Get\+ID} ()
+\begin{DoxyCompactList}\small\item\em Gets the drone\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+double \hyperlink{classDrone_ac8c535643f2be526c0ac8b0cc1fc49fc}{Get\+Speed} ()
+\begin{DoxyCompactList}\small\item\em Gets the drone\textquotesingle{}s speed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class for representing the drone object in the simulation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDrone_a3c240b2f2cb2a355f27e31dd3b5ac931}\label{classDrone_a3c240b2f2cb2a355f27e31dd3b5ac931}} 
+\index{Drone@{Drone}!Get\+Direction@{Get\+Direction}}
+\index{Get\+Direction@{Get\+Direction}!Drone@{Drone}}
+\subsubsection{\texorpdfstring{Get\+Direction()}{GetDirection()}}
+{\footnotesize\ttfamily double Drone\+::\+Get\+Direction (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the drone\textquotesingle{}s direction at a given index. 
+
+\begin{DoxyReturn}{Returns}
+The drone\textquotesingle{}s direction at a given index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrone_a5e69f5ebe80ece53ccb2238a2b598d97}\label{classDrone_a5e69f5ebe80ece53ccb2238a2b598d97}} 
+\index{Drone@{Drone}!Get\+ID@{Get\+ID}}
+\index{Get\+ID@{Get\+ID}!Drone@{Drone}}
+\subsubsection{\texorpdfstring{Get\+I\+D()}{GetID()}}
+{\footnotesize\ttfamily int Drone\+::\+Get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the drone\textquotesingle{}s ID. 
+
+\begin{DoxyReturn}{Returns}
+The drone\textquotesingle{}s ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrone_ad8e2a72eb608ef4f8a82402a74fd5ad5}\label{classDrone_ad8e2a72eb608ef4f8a82402a74fd5ad5}} 
+\index{Drone@{Drone}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Drone@{Drone}}
+\subsubsection{\texorpdfstring{Get\+Position()}{GetPosition()}}
+{\footnotesize\ttfamily double Drone\+::\+Get\+Position (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the drone\textquotesingle{}s position at a given index. 
+
+\begin{DoxyReturn}{Returns}
+The drone\textquotesingle{}s position at a given index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrone_ac8c535643f2be526c0ac8b0cc1fc49fc}\label{classDrone_ac8c535643f2be526c0ac8b0cc1fc49fc}} 
+\index{Drone@{Drone}!Get\+Speed@{Get\+Speed}}
+\index{Get\+Speed@{Get\+Speed}!Drone@{Drone}}
+\subsubsection{\texorpdfstring{Get\+Speed()}{GetSpeed()}}
+{\footnotesize\ttfamily double Drone\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the drone\textquotesingle{}s speed. 
+
+\begin{DoxyReturn}{Returns}
+The drone\textquotesingle{}s speed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrone_a9b164e1535a80ce8e4de11ab0c0edcdc}\label{classDrone_a9b164e1535a80ce8e4de11ab0c0edcdc}} 
+\index{Drone@{Drone}!Is\+Key\+Down@{Is\+Key\+Down}}
+\index{Is\+Key\+Down@{Is\+Key\+Down}!Drone@{Drone}}
+\subsubsection{\texorpdfstring{Is\+Key\+Down()}{IsKeyDown()}}
+{\footnotesize\ttfamily bool Drone\+::\+Is\+Key\+Down (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Check if keys are pressed. 
+
+\begin{DoxyReturn}{Returns}
+True if yes, False if not 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/drone.\+h\item 
+/home/user/repo/project/src/drone.\+cc\end{DoxyCompactItemize}

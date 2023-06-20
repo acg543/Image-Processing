@@ -1,0 +1,56 @@
+\hypertarget{classSimulation}{}\section{Simulation Class Reference}
+\label{classSimulation}\index{Simulation@{Simulation}}
+
+
+The class for simulating a drone finding a robot.  
+
+
+
+
+{\ttfamily \#include $<$simulation.\+h$>$}
+
+
+
+Inheritance diagram for Simulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classSimulation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classSimulation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSimulation_a3cd62ace1159d49c2120c2cf5d56e7ee}\label{classSimulation_a3cd62ace1159d49c2120c2cf5d56e7ee}} 
+virtual void \hyperlink{classSimulation_a3cd62ace1159d49c2120c2cf5d56e7ee}{Create\+Entity} (picojson\+::object \&entity\+Data)
+\begin{DoxyCompactList}\small\item\em Creates an entity based on object passed and sets all data fields. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSimulation_a6f379a690fc567a53e74e954412467b0}\label{classSimulation_a6f379a690fc567a53e74e954412467b0}} 
+void \hyperlink{classSimulation_a6f379a690fc567a53e74e954412467b0}{Update} (double dt)
+\begin{DoxyCompactList}\small\item\em Updates the simulation based on time passed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSimulation_a073f3aa8c843e48b6b69148788d3fabf}\label{classSimulation_a073f3aa8c843e48b6b69148788d3fabf}} 
+void \hyperlink{classSimulation_a073f3aa8c843e48b6b69148788d3fabf}{Finish\+Update} (picojson\+::object \&return\+Value)
+\begin{DoxyCompactList}\small\item\em Updates the final display. Called after all updating is done. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSimulation_a215d77c2edb2dbcdad76658b020d00e5}\label{classSimulation_a215d77c2edb2dbcdad76658b020d00e5}} 
+\hyperlink{classDrone}{Drone} {\bfseries drone} = Entity\+Factory\+::drone\+Entity
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class for simulating a drone finding a robot. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/simulation.\+h\item 
+/home/user/repo/project/src/simulation.\+cc\end{DoxyCompactItemize}

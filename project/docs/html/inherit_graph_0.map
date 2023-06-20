@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classMovement.html" title="The class for handling movement of the drone. " alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node2" href="$classBeeline.html" title="The class for moving the drone in a straight line from point A to point B. " alt="" coords="144,5,215,32"/>
+</map>

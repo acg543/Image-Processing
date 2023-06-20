@@ -1,0 +1,5 @@
+<map id="Filter" name="Filter">
+<area shape="rect" id="node2" href="$classDoubleThresholdFilter.html" title="{DoubleThresholdFilter\n||+ DoubleThresholdFilter()\l+ Apply()\l}" alt="" coords="5,145,195,237"/>
+<area shape="rect" id="node3" href="$classGreyScaleFilter.html" title="{GreyScaleFilter\n||}" alt="" coords="219,153,339,230"/>
+<area shape="rect" id="node4" href="$classHysteresisFilter.html" title="{HysteresisFilter\n||+ HysteresisFilter()\l+ Apply()\l}" alt="" coords="363,145,511,237"/>
+</map>

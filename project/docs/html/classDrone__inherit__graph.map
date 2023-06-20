@@ -1,0 +1,4 @@
+<map id="Drone" name="Drone">
+<area shape="rect" id="node2" href="$classSimulation.html" title="The class for simulating a drone finding a robot. " alt="" coords="23,336,153,443"/>
+<area shape="rect" id="node3" href="$classWebApp.html" title="A Web Application Sever that communicates with a web page through web sockets. " alt="" coords="5,491,171,612"/>
+</map>

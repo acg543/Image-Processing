@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classFilter.html" title="Filter" alt="" coords="5,56,60,83"/>
+<area shape="rect" id="node2" href="$classDoubleThresholdFilter.html" title="DoubleThresholdFilter" alt="" coords="108,5,272,32"/>
+<area shape="rect" id="node3" href="$classGreyScaleFilter.html" title="GreyScaleFilter" alt="" coords="130,56,250,83"/>
+<area shape="rect" id="node4" href="$classHysteresisFilter.html" title="HysteresisFilter" alt="" coords="129,107,251,133"/>
+</map>

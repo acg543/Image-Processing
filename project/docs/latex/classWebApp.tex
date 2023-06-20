@@ -1,0 +1,54 @@
+\hypertarget{classWebApp}{}\section{Web\+App Class Reference}
+\label{classWebApp}\index{Web\+App@{Web\+App}}
+
+
+A Web Application Sever that communicates with a web page through web sockets.  
+
+
+
+
+{\ttfamily \#include $<$web\+\_\+app.\+h$>$}
+
+
+
+Inheritance diagram for Web\+App\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classWebApp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Web\+App\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classWebApp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWebApp_a9ba424099f42bdd456f52c4bba87d5b2}\label{classWebApp_a9ba424099f42bdd456f52c4bba87d5b2}} 
+\hyperlink{classWebApp_a9ba424099f42bdd456f52c4bba87d5b2}{Web\+App} ()
+\begin{DoxyCompactList}\small\item\em Initializes server. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWebApp_ad73fb17d2f4176bb002a8e6df6346ef9}\label{classWebApp_ad73fb17d2f4176bb002a8e6df6346ef9}} 
+virtual \hyperlink{classWebApp_ad73fb17d2f4176bb002a8e6df6346ef9}{$\sim$\+Web\+App} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWebApp_a0af5cfc12444f53e48609360eff95d76}\label{classWebApp_a0af5cfc12444f53e48609360eff95d76}} 
+void \hyperlink{classWebApp_a0af5cfc12444f53e48609360eff95d76}{receive\+J\+S\+ON} (picojson\+::value \&val)
+\begin{DoxyCompactList}\small\item\em Receives J\+S\+ON from the web server. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWebApp_ac1ae360aa44aeb9f2bccb53f6d7881b4}\label{classWebApp_ac1ae360aa44aeb9f2bccb53f6d7881b4}} 
+void \hyperlink{classWebApp_ac1ae360aa44aeb9f2bccb53f6d7881b4}{Receive\+Command} (const std\+::string \&cmd, picojson\+::object \&data, picojson\+::object \&return\+Value)
+\begin{DoxyCompactList}\small\item\em Handles specific commands from the web server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A Web Application Sever that communicates with a web page through web sockets. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/web\+\_\+app.\+h\item 
+/home/user/repo/project/src/web\+\_\+app.\+cc\end{DoxyCompactItemize}
